@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## M58
 
 You can use the [editor on GitHub](https://github.com/MarchandRobin/M58/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
