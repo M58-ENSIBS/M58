@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="fr"> <!-- langue de la page -->
+  <head> <!-- En-tête de la page -->
+    
+    <meta charset="UTF-8" /> <!-- Encodage de la page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Redimensionnement de la page -->
+    <title>TodoList</title> <!-- Titre de la page -->
+    <link rel="icon" href = "icon.jpg"
+    /> <!-- Police de la page -->
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" 
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" 
+      crossorigin="anonymous"
+    /> <!-- Ajout de la police de la page Icons de la page -->
+    <link rel="stylesheet" href="style.css" /> <!-- Style de la page -->
+  </head> <!-- Fin de l'en-tête -->
+  <body> <!-- Corps de la page -->
+    <header> <!-- En-tête de la page -->
+      <h1>TODO LIST TD1</h1> <!-- Titre de la page -->
+    </header> <!-- Fin de l'en-tête -->
+    
+    <div class = "menu">
+    <a href="#" class="btn">Accueil</a>
+    <a href="#" class="btn">Contact</a>
+    <a href="#" class="btn">Aide</a>
+    </div>
+
+    <div class = "clear">
+    <button onclick="tempAlert();" class="btn" >Clear le cache</button>
+    </div>
+    <form> <!-- Formulaire de la page -->
+      <input type="text" class="todo-input" placeholder="Rentrez la task : " />   <!-- Champ de saisie de la page -->
+      <button class="todo-button" type="submit"> <i class="fas fa-check-circle"></i> </button> <!-- Bouton de la page -->
+      </button> <!-- Fin du bouton -->
+      <div class="select"> <!-- Début de la div --> 
+        <select name="todos" class="filter-todo"> <!-- Début du select -->
+          <option value="all">Toutes</option> <!-- Option de la page -->
+          <option value="completed">Complétées</option> <!-- Option de la page -->
+          <option value="uncompleted">Non-Complétées</option> <!-- Option de la page -->
+        </select> <!-- Fin du select -->
+      </div> <!-- Fin de la div -->
+    </form> <!-- Fin du formulaire -->
+    <div class="todo-container">  <!-- Début de la div -->
+      <ul class="todo-list"></ul> <!-- Liste de la page -->
+    </div> <!-- Fin de la div -->
+
+    <script src="script.js"></script> <!-- Script de la page -->
+  </body> <!-- Fin du corps de la page -->
+
+  <footer> <!-- Pied de page -->
+    <p class = "heuredate"><span id="datetime"></span></p><script>var dt = new Date();
+      document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>    
+    <span class = "blinking"> Copyright © 2022 - TodoList </span></br>
+    <span class = "blinking"> Robin MARCHAND - Groupe 1 </span>
+    <button class="mode" type="submit" onclick="whitemode();"> <i class="fas fa-moon"></i> </button>
+  </footer> <!-- Fin du pied de page -->
+</html> <!-- Fin de la page -->
